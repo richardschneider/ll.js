@@ -87,7 +87,7 @@ When a term does not match, the parser backtracks and tries something else. If a
 associated action is executed. The number and string parsers have associated actions that push the
 parsed values to the stack. Other terms can be annotated with an action by calling .op(cb) on them,
 with cb being a function that executed the action asynchronously; its signature should be 
-(Array stack, Function callback).
+(Array stack, Function callback). 
 
 Parser grammar can be created in the parser DSL provided by the ll.js 'Term 
 factory'. For efficient usage, it is best to create a variable alias for the factory
